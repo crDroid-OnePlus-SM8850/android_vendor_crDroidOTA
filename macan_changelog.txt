@@ -1,0 +1,422 @@
+====================
+     10-18-2026
+====================
+
+   * device/oneplus/fairlady
+3fe86c5 Enable DeviceAsWebcam
+6814d20 Do not flash the abl partition
+
+   * device/oneplus/infiniti
+d3ece02 Enable DeviceAsWebcam
+e503781 Do not flash the abl partition
+aeecfeb infiniti: overlay: Use the measured camera hole size
+
+   * device/oneplus/macan
+c01c532 Do not flash the abl partition
+dbf1a7b Add the aw8697 haptic RAM waveform banks
+56916db overlay: Centre the shade header on the camera hole
+aef48e8 macan: Boost the touch report rate with IHighTouchPollingRate
+dae273a macan: Select the SN220 NFC config for the eSIM switcher
+162ec70 macan: Enable DeviceAsWebcam
+f68089a macan: Use the stock 560 dpi
+ba31e37 macan: displayconfig: Calibrate the brightness table and HDR boost
+594aaf6 macan: Update from CPH2769_16.0.10.600(EX01)
+8ea79e0 macan: Generate thermal-engine.conf from stock policies
+23d84c1 macan: overlay: Align with infiniti/fairlady structure, stock display values and measurements
+5ef7336 macan: Install ACDB calibration for alor_mtp
+5b30d7a macan: Enable QTI recovery minui backend and set recovery UI density to xxhdpi
+970469e macan: Build kernel from source
+2e594a0 macan: Set regional key attestation and sensors properties
+362c5d8 macan: Move property files to a specific dir
+
+   * device/oneplus/macanc
+4c616c0 Do not flash the abl partition
+366ff6c Add the aw8697 haptic RAM waveform banks
+c0f10b8 overlay: Centre the shade header on the camera hole
+77e94fb macanc: Boost the touch report rate with IHighTouchPollingRate
+9e34057 macanc: Enable DeviceAsWebcam
+5a35b8d macanc: Use the stock 560 dpi
+41e0a7f macanc: displayconfig: Calibrate the brightness table and HDR boost
+a71c1e6 macanc: Update from PLR110_16.0.10.500(CN01)
+f9a3db2 macanc: Generate thermal-engine.conf from stock policies
+f5b2591 macanc: overlay: Align with infiniti/fairlady structure, stock display values and measurements
+faa0def macanc: Install ACDB calibration for alor_mtp
+0911383 macanc: Enable QTI recovery minui backend and set recovery UI density to xxhdpi
+f5740fa macanc: Build kernel from source
+9982d24 macanc: Set key attestation and sensors properties
+3a9b6f1 macanc: Move property files to a specific dir
+
+   * device/oneplus/sm8850-common
+e37a77d sm8850-common: Sign the images with our own AVB key
+f15253f sm8850-common: init: Keep AOD in the dim mode
+53072f3 sm8850-common: overlay: Handle the battery current in mA
+6450d1e sm8850-common: overlay: Show the minimum refresh rate selector
+
+   * frameworks/base
+265a6e8ba SystemUI: DynamicBar: Use system theme for media output dialog
+
+   * hardware/lineage/generic-ims
+6ef5620 carriersettings: Support device configuration overlays
+
+   * hardware/oplus
+d139db0 vibrator: Play long vibrations with the haptic driver
+
+   * packages/apps/EmergencyInfo
+fc80d69 EmergencyInfo: Fix choosing a photo without a crop activity
+
+   * packages/apps/Settings
+f051efd7083 use builder's OTA server
+57241444c3d allows to disable donation reminders
+
+   * packages/apps/Updater
+1a60d87 use builder's links
+988787f use builder's OTA server
+
+   * packages/apps/crDroidSettings
+dd0f10f5 increase notification interval
+83805a4a make donate reminder notification silent
+b478eeaa allows to disable donation reminders
+
+   * vendor/oneplus/fairlady
+e562504 Do not flash the abl partition
+
+   * vendor/oneplus/infiniti
+e3486cb Do not flash the abl partition
+
+   * vendor/oneplus/macan
+ef4b431 Do not flash the abl partition
+75e8cd9 Add the aw8697 haptic RAM waveform banks
+9de3807 macan: Add the SN220 NFC config for the eSIM switcher
+51769e4 macan: Update from CPH2769_16.0.10.600(EX01)
+
+   * vendor/oneplus/macanc
+4dbec90 Do not flash the abl partition
+41939e2 Add the aw8697 haptic RAM waveform banks
+810164d macanc: Update from PLR110_16.0.10.500(CN01)
+
+====================
+     10-17-2026
+====================
+
+   * android
+45a4fb8 readme: include faceunlock build flag
+
+   * bionic
+c5a2cb3 bionic: ifaddrs: don't require inet sockets for name/flag resolution
+
+   * device/oneplus/fairlady
+6fa8ad8 fairlady: Move libOplusSpatializerAidl hack to ./blob-patches
+
+   * device/oneplus/infiniti
+8b9ed71 infiniti: Move libOplusSpatializerAidl hack to ./blob-patches
+
+   * frameworks/native
+b3de20c renderengine: KawaseDarkmoon: fix scaling, caching and fallback issues
+
+   * hardware/lineage/compat
+70abb57 compat: Add legacy Codec2 allocator and block pool wrappers
+
+   * kernel/platform/kernel-6.12/build/kernel
+d158a8b kleaf: Point default prebuilt URL to ci.android.com
+
+   * packages/apps/Settings
+136781c4c44 Settings: Forcefully enable Hotspot Speed setting
+
+   * packages/modules/Bluetooth
+f3fb97e gd: hci: Allow disabling erroneous data reporting
+
+   * tools/extract-utils
+78ba5d5 extract_utils: let patch_file() take python modules
+
+   * vendor/addons
+0f2ba526 addons: sdk: blur: Lighter frosted glass with a rim highlight
+
+   * vendor/lineage
+3ea4442 crdroid: Face unlock packages needs to be included explicitly
+
+====================
+     10-16-2026
+====================
+
+   * device/oneplus/fairlady
+a2fc77d fairlady: Spatialize all channels of multichannel content
+
+   * device/oneplus/infiniti
+9a408e2 infiniti: Spatialize all channels of multichannel content
+
+   * frameworks/av
+87d929c Effects: Do not allow DAP_OFFLOAD effect to be suspended
+
+   * hardware/google/pixel-sepolicy
+618c420 sepolicy: Ignore rango specific CP3A rules
+
+   * hardware/qcom-caf/sm8450/audio/primary-hal
+25c64ed hal: lvacfs: Convert input format to tinyalsa PCM IDs
+
+   * hardware/qcom-caf/sm8550/audio/pal
+c494968 pal: Add an option to prefer master gain for equal channel volumes
+
+   * kernel/platform/kernel-6.12/common
+f47396dab ANDROID: ashmem: decrement LRU_COUNT when purging ranges
+
+   * lineage/scripts
+9e37043 pixel: Also update BuildSystemDesc
+
+   * packages/apps/Aperture
+485c98d Automatic translation import
+
+   * packages/apps/AudioFX
+2fc3a54 Automatic translation import
+
+   * packages/apps/Camelot
+cdaa570 Automatic translation import
+
+   * packages/apps/Canvas
+1a9b4ef Automatic translation import
+
+   * packages/apps/Catapult
+95352d5 Automatic translation import
+
+   * packages/apps/DeskClock
+85cde57 Automatic translation import
+
+   * packages/apps/ExactCalculator
+933974f Automatic translation import
+
+   * packages/apps/FlipFlap
+4866b33 Automatic translation import
+
+   * packages/apps/Jelly
+64a74fb Automatic translation import
+
+   * packages/apps/TvSettings
+cfb054d Automatic translation import
+
+   * packages/apps/Twelve
+fb82f3c Automatic translation import
+
+   * packages/resources/devicesettings
+625deca Automatic translation import
+
+   * vendor/crowdin
+c654f12 Automatic translation import
+
+   * vendor/oneplus/fairlady
+251d0be fairlady: Spatialize all channels of multichannel content
+
+   * vendor/oneplus/infiniti
+29649bc infiniti: Spatialize all channels of multichannel content
+
+   * vendor/qcom/opensource/commonsys/fm
+9ec99f9 Automatic translation import
+
+====================
+     10-15-2026
+====================
+
+   * device/oneplus/fairlady
+e37429f fairlady: Sort proprietary-firmware.txt entries
+
+   * device/oneplus/infiniti
+072e8de infiniti: Sort proprietary-firmware.txt entries
+16381a9 infiniti: overlay: Update pSIM illustration to OnePlus 15 device layout
+
+   * packages/apps/Launcher3
+519dcd7 Validate mControllers before access it.
+
+====================
+     10-14-2026
+====================
+
+   * device/oneplus/fairlady
+ab8cf05 fairlady: Add dcp partition image
+
+   * device/oneplus/infiniti
+815aa3b infiniti: Add dcp partition image
+bb0169a infiniti: Enable spatial audio
+
+   * hardware/oplus
+4bb0fc8 power: Notify charger HAL about screen state
+55b410b power: Leave DOUBLE_TAP_TO_WAKE to QTI power HAL if it has a node
+219ee3a Euicc: Update SIM and eSIM illustrations
+
+   * kernel/platform/kernel-6.12/vendor/oneplus/sm8850-devicetrees
+1ed1e65 arm64: dts: oplus: macan: Fix volume-up key mapping
+
+   * packages/apps/SetupWizard
+8bdbc68 SUW: Switch to static logo
+
+   * packages/inputmethods/LatinIME
+f826b0f LatinIME: Remove launcher icon
+
+   * system/fs/fs_mgr
+2a5ed2c fs_mgr: Don't log missing f2fs linear_lookup sysfs entry
+
+   * vendor/oneplus/infiniti
+7457b10 infiniti: Add dcp partition image
+033ef3c infiniti: Enable spatial audio
+
+   * vendor/oneplus/sm8850-common
+62baaa3 sm8850-common: Enable spatial audio
+
+====================
+     10-13-2026
+====================
+
+   * device/oneplus/fairlady
+d27c751 fairlady: Enable spatial audio
+
+   * device/oneplus/sm8850-common
+7a13971 sm8850-common: Enable spatial audio
+16c734e sm8850-common: overlay: Enable refresh rate synchronization
+
+   * external/setupcompat
+15f79d6 partnerconfig: Better report partner configs that are not resolved
+
+   * hardware/lineage/interfaces
+a0f3ada power-libperfmgr: Preserve session state on thread updates
+
+   * hardware/oplus
+2ccd6fa oplus: Add Dolby Vision Codec2 service wrapper
+4226f94 sepolicy: qti: Also support Dolby Vision HIDL service
+1a56aa4 vintf: Add Dolby Vision HIDL instance
+
+   * hardware/qcom-caf/sm8550/audio/agm
+6651285 agm: Support sku agnostic acdb odm path
+
+   * hardware/qcom-caf/sm8550/audio/primary-hal
+a674b23 hal/lvacfs: correctly pass input format
+
+   * packages/apps/ThemePicker
+156b6b2 ThemePicker: Refresh the icon preview when the accent color changes
+
+   * system/update_engine
+ae21769 update_engine: Always disable signature and downgrade checks
+
+====================
+     10-12-2026
+====================
+
+   * build/soong
+073b22d java: Run local r8 in highmem_pool
+
+   * hardware/oplus
+1278cdd extract-utils-ext: Support default thermal policy layout
+d589e1c extract-utils-ext: Allow overriding the Horae target config
+f3b3f62 eSimSwitcher: Update vendor modem state before switching GPIO
+4fd6df7 extract-utils-ext: Decrypt thermal control config in a blob fixup
+05a24a0 eSimSwitcher: Preserve slot mapping across SIM type changes
+b4c55e2 eSimSwitcher: Update the toggle after switching completes
+
+   * hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+62783f8 audio-ar: Bump VINTF fragments to current
+
+====================
+     10-11-2026
+====================
+
+   * build/make
+c76e3bc build: overriding lineage namespace
+
+   * device/oneplus/infiniti
+76e74d3 infiniti: vibrator: Tune haptic feedback
+8d61df1 infiniti: Set regional key attestation properties
+d9c370c infiniti: Generate thermal-engine.conf from stock policies
+
+   * device/oneplus/sm8850-common
+4e71dbb sm8850-common: Advertise KeyMint v4
+606e4ad sm8850-common: Disable duplicate XTRA daemon startup
+bbe33ee sm8850-common: Remove stale blob fixups
+aad03c9 sm8850-common: Remove duplicate head tracker permission
+e3b3e69 sm8850-common: Remove unused audio build flags
+42d11c1 sm8850-common: Clean up properties
+
+   * frameworks/opt/telephony
+57856ee telephony: Handle scan rejection and fall back to visible cell infos
+
+   * hardware/oplus
+75a883d sensors: fusionlight: Support black-frame V2.1 profiles
+0eb7b3b sensors: fusionlight: Support pre-V2.1 profiles
+4622047 extract-utils-ext: Support encrypted sys_thermal_control_config.xml
+
+   * packages/apps/Dialer
+107b649 Dialer: Fix crash when theme color resolves to white
+
+   * packages/apps/EuiccPolicy
+3b3c28e EuiccPolicy: Always enable EUICC packages
+
+   * packages/apps/Glimpse
+454f3b9 Glimpse: Fix opening media from file managers
+
+   * packages/apps/LMOFreeform
+dcfd5e6 New Crowdin updates (#36)
+
+   * packages/apps/crDroidSettings
+07f9a07c crdroid: Support smooth navigation across uncached pages when using tabs
+
+   * packages/resources/apps
+91d835b New translations (#11)
+
+   * packages/services/QuickLook
+935d08e WeatherProvider: Update import path for OmniJawsClient
+
+   * system/vold
+598b1db vold: Fallback to direct restorecon if property set fails
+
+   * vendor/oneplus/infiniti
+9dbc007 infiniti: Generate thermal-engine.conf from stock policies
+
+   * vendor/oneplus/sm8850-common
+e0aecff sm8850-common: Disable duplicate XTRA daemon startup
+
+====================
+     10-10-2026
+====================
+
+   * device/oneplus/fairlady
+d05c131 fairlady: Generate thermal-engine.conf from stock policies
+
+   * external/chromium-webview/prebuilt/arm
+170e899 Update Chromium Webview arm to 155.0.8059.39
+
+   * external/chromium-webview/prebuilt/arm64
+604ad4c Update Chromium Webview arm64 to 155.0.8059.39
+
+   * external/chromium-webview/prebuilt/x86
+2ca10d7 Update Chromium Webview x86 to 155.0.8059.39
+
+   * external/chromium-webview/prebuilt/x86_64
+de57895 Update Chromium Webview x86_64 to 155.0.8059.39
+
+   * hardware/oplus
+359f121 Introduce extract-utils-ext
+
+   * packages/apps/Messaging
+94e96d5 Merge 'lineage-24.0' into 17.0
+
+====================
+     10-09-2026
+====================
+
+   * device/oneplus/fairlady
+ef025e3 fairlady: Set fairlady DTBO config
+
+   * device/oneplus/sm8850-common
+2873465 sm8850-common: Drop dummy thermal-engine.conf
+
+   * device/qcom/sepolicy_vndr/sm8750
+78d2d36 sepolicy_vndr: Add required policy for waipio on 6.6
+
+   * hardware/oplus
+930a82c Pen: Cap refresh rate only while the pen is in use
+6b36209 Pen: Relay BLE pen pressure to the touch HAL
+
+   * kernel/platform/kernel-6.12/vendor/oneplus/sm8850-modules
+08b3042 oplus: fingerprint: Limit display notifier dependency to MediaTek
+
+   * packages/apps/SettingsIntelligence
+b6c48af SettingsIntelligence: Don't crash indexing on inaccessible providers
+
+   * vendor/oneplus/sm8850-common
+9cc919d sm8850-common: Drop dummy thermal-engine.conf
+

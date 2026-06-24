@@ -1,0 +1,28 @@
+{
+    "response": [
+        {
+            "maintainer": "Ponywka (Unofficial builds)",
+            "oem": "OnePlus",
+            "device": "OnePlus Ace 6T",
+            "filename": "crDroidAndroid-17.0-20261018-macanc-v13.0.zip",
+            "download": "https://sourceforge.net/projects/ponywka-android-builds/files/oneplus/macanc/crDroid/13.x/20261018/crDroidAndroid-17.0-20261018-macanc-v13.0.zip/download",
+            "timestamp": 1792317651,
+            "md5": "596e7dcae741b83703fc1bea7a6534dc",
+            "sha256": "7041868bc47bd58ef5f2481895d0fe4978c1263d8319e7cce3f760a3e17b2d41",
+            "size": 3046780457,
+            "version": "13.0",
+            "buildtype": "Nightly",
+            "forum": "https://xdaforums.com/t/rom-16-unofficial-crdroid-12-for-oneplus-ace-6t.4790393/",
+            "gapps": "https://nikgapps.com/crdroid-official",
+            "firmware": "",
+            "modem": "",
+            "bootloader": "",
+            "recovery": "https://sourceforge.net/projects/ponywka-android-builds/files/oneplus/macanc/crDroid/13.x/20261018/recovery.img/download",
+            "paypal": "",
+            "telegram": "",
+            "dt": "https://github.com/crDroid-OnePlus-SM8850/android_device_oneplus_macanc",
+            "common-dt": "https://github.com/crDroid-OnePlus-SM8850/android_device_oneplus_sm8850-common",
+            "kernel": "https://github.com/LineageOS/android_kernel_oneplus_sm8850"
+        }
+    ]
+}

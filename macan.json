@@ -1,0 +1,28 @@
+{
+    "response": [
+        {
+            "maintainer": "Ponywka (Unofficial builds)",
+            "oem": "OnePlus",
+            "device": "OnePlus 15R",
+            "filename": "crDroidAndroid-17.0-20261018-macan-v13.0.zip",
+            "download": "https://sourceforge.net/projects/ponywka-android-builds/files/oneplus/macan/crDroid/13.x/20261018/crDroidAndroid-17.0-20261018-macan-v13.0.zip/download",
+            "timestamp": 1792325625,
+            "md5": "f3c44f937716ed058f4d937aec3c5cc0",
+            "sha256": "ad60f58019134761a19bac0dc6d94322819fcb48c2a8f6fc570590e7bb376ed8",
+            "size": 3047832689,
+            "version": "13.0",
+            "buildtype": "Nightly",
+            "forum": "https://xdaforums.com/t/rom-16-unofficial-crdroid-12-for-oneplus-15r.4790392/",
+            "gapps": "https://nikgapps.com/crdroid-official",
+            "firmware": "",
+            "modem": "",
+            "bootloader": "",
+            "recovery": "https://sourceforge.net/projects/ponywka-android-builds/files/oneplus/macan/crDroid/13.x/20261018/recovery.img/download",
+            "paypal": "",
+            "telegram": "",
+            "dt": "https://github.com/crDroid-OnePlus-SM8850/android_device_oneplus_macan",
+            "common-dt": "https://github.com/crDroid-OnePlus-SM8850/android_device_oneplus_sm8850-common",
+            "kernel": "https://github.com/LineageOS/android_kernel_oneplus_sm8850"
+        }
+    ]
+}
