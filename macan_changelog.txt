@@ -154,7 +154,7 @@ e88acd0 sepolicy: qti: Address some subsystem_daemon denials
 633bf33 Euicc: Add OnePlus 15 / 15R support
 
    * lineage/hudson
-cb49db8 I Took A Pill In Ibiza 🎶🎵
+cb49db8
 
    * packages/apps/Updater
 330b008 Updater: Use verified icon for ZeroStatePreference

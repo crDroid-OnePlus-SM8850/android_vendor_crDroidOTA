@@ -69,7 +69,6 @@ d037293 This device seriously sucks, absolutely cursed.
    * lineage/wiki
 2cd119f wiki: Switch to showing the display name everywhere
 44f9868 devices: Add Fairphone 6
-dcaaffc devices: Nix DRG support
 
    * packages/apps/Updater
 73aa0c6 Updater: Update server requirements in README
@@ -103,6 +102,7 @@ b7fe1fd finally beating klte at variant count
 299ce76 Updated to 24-Jun-2026 22:01 UTC
 
    * lineage/wiki
+dcaaffc devices: Nix DRG support
 eb957d9 devices: Rework DirtySanta installation instructions
 eee4cfd devices: Add G6 Engineering BL
 
