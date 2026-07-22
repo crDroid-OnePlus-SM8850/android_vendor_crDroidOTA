@@ -1,470 +1,260 @@
 ====================
-     07-13-2026
+     07-22-2026
 ====================
 
    * build/make
-9115fb9861 Expose TARGET_MAX_PAGE_SIZE_SUPPORTED via soong config vars
+54204d37cc Expose TARGET_MAX_PAGE_SIZE_SUPPORTED via soong config vars
+
+   * device/oneplus/infiniti
+ba57c74 infiniti: Remove unused HIDL cammidasservice
+fc1805a infiniti: Update from OOS 11.A.43
 
    * device/oneplus/sm8850-common
-be1e170 enable RKPD (enables no-tinkering efisp exploit compatibility)
-b649b6e sm8850-common: enable config_show_min_refresh_rate_switch
-01c59a0 Add kGestureDoubleTap
-bab0248 Add DT2W workaround
+f888bff sm8850-common: Add urcc-service and uah blobs to proprietary-files.txt
+68dd4b0 enable RKPD (enables no-tinkering efisp exploit compatibility)
+3de7220 sm8850-common: enable config_show_min_refresh_rate_switch
+d51e370 Add kGestureDoubleTap
+e52e311 Add DT2W workaround
+
+   * frameworks/base
+fb1dc61dde0b PowerManagerService: re-apply DT2W mode on each screen-off
+5d488170eceb add workaround for punch-hole blinking
+
+   * hardware/oplus
+61da18d uah-client: Remove stub now that the real vendor blob is shipped
+620e591 touch: support selectable Oplus polling rates
+
+   * lineage-sdk
+8271aa5 sdk: allow selectable touch polling modes
+
+   * lineage/mirror
+53438e3 Updated aosp-minimal to 21-Jul-2026 18:02 UTC
+
+   * lineage/wiki
+12c0c94 wiki: "GB GB" -> " GB"
+4678ea1 devices: lemonades: Correct the firmware requirements
+
+   * packages/apps/Settings
+5a10a6c7fef use builder's OTA server
+62f9d78fd0e allows to disable donation reminders
+
+   * packages/apps/Updater
+3d62c39 use builder's links
+307b393 use builder's OTA server
+
+   * packages/apps/crDroidSettings
+f5104abb775 increase notification interval
+b71b1f63392 make donate reminder notification silent
+e57daddc6b5 allows to disable donation reminders
+
+   * system/core
+db6bbf9 healthd: normalize for all known devices
+1c760a8 healthd: normalize OPlus battery current units
+
+   * vendor/oneplus/fairlady
+00ec515 manifest: apply builder modified repos
+
+   * vendor/oneplus/infiniti
+28563f1 manifest: apply builder modified repos
+e84033e infiniti: Remove unused HIDL cammidasservice
+bca909d infiniti: Update from OOS 11.A.43
+
+   * vendor/oneplus/macan
+6479d91 manifest: apply builder modified repos
+
+   * vendor/oneplus/macanc
+2890def manifest: apply builder modified repos
+
+   * vendor/oneplus/sm8850-common
+3886737 sm8850-common: Add vendor.oplus.hardware.urcc-service and UAH resource control blobs
+92e68ac manifest: apply builder modified repos
+
+====================
+     07-21-2026
+====================
+
+   * kernel/oneplus/sm8850
+3b094a2ea Merge 6.12.91 into android16-6.12-lts
+
+   * lineage/hudson
+8df95c8 husdon: Add mars to build targets
+b3296a7 hudson: add h873
+
+   * lineage/wiki
+a7fda2d wiki: devices: Promote mars to 23.2
+1832e52 devices: Add H873 LG G6 variant
+
+====================
+     07-20-2026
+====================
+
+   * lineage/hudson
+969b826 Regenerate device dependency mappings
+e2e0ea8 updater: Mention SHIFTphone 8.1
+
+   * lineage/mirror
+e76eaa4 Updated to 19-Jul-2026 18:01 UTC
+
+   * lineage/wiki
+994bcab wiki: Improve web flash tool info
+66c4396 wiki: Fix broken link in glossary
+e391594 wiki: Split otter into 8.0/8.1 variants
+
+   * vendor/apn
+3169b43 apns: Update Philippines APNs
+
+====================
+     07-19-2026
+====================
+
+   * lineage/wiki
+aa536e1 devices: NB1: Use fastboot_misc recovery reboot method
+c04f3b7 wiki: Add fastboot_misc recovery reboot method
+
+====================
+     07-18-2026
+====================
+
+   * lineage/hudson
+c9c7622 How powerfull is Odin??
+
+   * lineage/wiki
+0a8f701 wiki: Add AYN Odin (M0/M2)
+
+====================
+     07-17-2026
+====================
+
+   * device/oneplus/sm8850-common
+0522cdc sm8850-common: De-blob vendor.oplus.hardware.displaycolorfeature V1 interface
+322306d sm8850-common: Update from OOS 11.A.49
+
+   * hardware/oplus
+14d19d3 oplus: Introduce bare minimum hbp setup tool for recovery touch support
+2af68ca aidl: powershare: Fix enable_tx chown race condition
+ab81002 sepolicy: qti: Address some subsystem_daemon denials
+0575add sepolicy: qti: Allow rules for mdmfeature
+d072b24 sepolicy: qti: Bring up support for infiniti/fairlady (OnePlus 15/15T)
+73baca2 Euicc: Add OnePlus 15 / 15R support
+ec3b821 vintf: Update fwk matrix for OOS 16.0.9
+df744ca interfaces: Update vendor.oplus.hardware.display.MixLut3D to V2
+
+   * lineage/hudson
+9ff722a Regenerate device dependency mappings
+
+   * lineage/mirror
+e59e9b8 Updated to 16-Jul-2026 10:01 UTC
+
+   * vendor/oneplus/sm8850-common
+af791f9 sm8850-common: De-blob vendor.oplus.hardware.displaycolorfeature V1 interface
+cc1d465 sm8850-common: Update from OOS 11.A.49
+
+====================
+     07-16-2026
+====================
+
+   * frameworks/base
+77451ab87ba3 Animate play/pause button when clicked
+55ecc60c5019 Fix crash with media carousel pager update
+ef26ad71d2c2 increase flashlight dialog separator contrast
+
+   * lineage/hudson
+7190742 Regenerate device dependency mappings
+04d7500 hudson: Add cas family
+946533c hudson: Add genevn to the roster
+
+   * lineage/mirror
+906cba7 Updated to 15-Jul-2026 20:21 UTC
+
+   * packages/apps/Aperture
+4256784 Automatic translation import
+
+   * packages/apps/DeskClock
+86b8c63 Automatic translation import
+
+   * packages/apps/FMRadio
+78dfedb Automatic translation import
+
+   * packages/apps/Glimpse
+29694da Automatic translation import
+
+   * packages/apps/Jelly
+6517f6a Automatic translation import
+
+   * packages/apps/Twelve
+2443487 Automatic translation import
+
+   * packages/resources/devicesettings
+0c8e54f Automatic translation import
+
+   * vendor/crowdin
+542010c Automatic translation import
+
+   * vendor/qcom/opensource/commonsys/fm
+87b347b Automatic translation import
+
+====================
+     07-15-2026
+====================
+
+   * frameworks/base
+d4c530b9f76c New Crowdin updates (#1331)
+
+   * lineage/mirror
+909c062 Updated aosp-minimal to 14-Jul-2026 22:01 UTC
+
+   * packages/apps/GameSpace
+f27d428 New Crowdin updates (#154)
+e59c138 New Crowdin updates (#153)
+
+   * packages/apps/LMOFreeform
+53000e4 New Crowdin updates (#32)
+
+   * packages/apps/crDroidSettings
+7fa6f533865 New Crowdin updates (#1329)
+
+   * packages/resources/apps
+58339c7 New Crowdin updates (#3)
+
+====================
+     07-14-2026
+====================
+
+   * art
+663e2bf art: Optimize IsPathologicalCase with unlikely hints
+
+   * bionic
+b5f8e4d libm: optimize roundf with bit-based fast path
+
+   * frameworks/base
+0812e1da9558 Fixed the issue where the panel wouldn't collapse after clear all.
+267a910ad4f9 Remove unused variables from SystemServer
+
+   * lineage/hudson
+dbd007b hudson: Add lamu family
+
+====================
+     07-13-2026
+====================
 
    * device/qcom/sepolicy_vndr/legacy-um
 a61270bcd vendor: lahaina: Label hwmon node from motorola/sm7325
-
-   * frameworks/base
-87fafa78e38e PowerManagerService: re-apply DT2W mode on each screen-off
-a5de6cb68f94 add workaround for punch-hole blinking
 
    * hardware/lineage/interfaces
 19b455c light: Add support for microphone & camera privacy LEDs
 5438da9 light: Don't allow setting unavailable lights
 
-   * hardware/oplus
-acd06fe touch: support selectable Oplus polling rates
-
-   * lineage-sdk
-fabaa1e sdk: allow selectable touch polling modes
-
-   * lineage/hudson
-701aa1f Regenerate device dependency mappings
-
-   * lineage/wiki
-eb696c6 wiki: Add ripple effect to dialog close button
-2961ff2 wiki: Add ripple effect on navbar
-45b088c wiki: Animate mobile buttons properly
-22ca6d0 wiki: Add aarch64-linux platform to bundle
-98c7138 wiki: devices: Style popups properly
-e0b94e1 wiki: Replace custom dialogs with standard elements
-d36a110 wiki: devices: Wrap too long device names
-71d1cca wiki: devices: Theme checkboxes properly
-f6051c7 wiki: devices: Add margin to checkboxes
-8c76241 wiki: Add margin to top title
-
-   * packages/apps/Settings
-8b7e672dc96 use builder's OTA server
-0efa42cc4b4 allows to disable donation reminders
-
    * packages/apps/Updater
-101d13b use builder's links
-08d64a5 use builder's OTA server
-
-   * packages/apps/crDroidSettings
-2a2b4f78fd1 increase notification interval
-6e53bed51dd make donate reminder notification silent
-6a9b1d645d6 allows to disable donation reminders
-
-   * system/core
-0a0b162 healthd: normalize for all known devices
-afc31ea healthd: normalize OPlus battery current units
-
-====================
-     07-12-2026
-====================
-
-   * android
-aac17d7 manifest: Untrack sm8350 display hal
-
-   * device/oneplus/sm8850-common
-d3c331a sm8850-common: init: Restore qcom zram
-31b11a2 sm8850-common: Import kernel post boot memory script onto the tree
-c4b4719 sm8850-common: Enabling spatial audio
-cdec852 sm8850-common: Build hbp-setup for recovery touch support
-87c6564 sm8850-common: Decommonize DSP modules for now
-424fa58 Revert "sm8650-common: Set force_sysfs_fallback=1 sysctl via cmdline"
-
-   * device/qcom/sepolicy
-d903f8e Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-
-   * device/qcom/sepolicy_vndr/legacy-um
-4471e107f qva: Remove duplicate attributes
-2503339db qva: lahaina: exported_wifi_prop -> wifi_hal_prop
-
-   * device/qcom/sepolicy_vndr/sm8550
-db3029437 Merge tag 'LA.VENDOR.13.2.0.r1-27500-KAILUA.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-   * device/qcom/sepolicy_vndr/sm8650
-69cbb9a12 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-574037f40 qva: Remove duplicate attributes
-a0bb754a0 Revert "sepolicy: Add new Sepolicy context for AVC denial for volcano"
-7847bbf4d Revert "sepolicy: Add new Sepolicy context for AVC denial for volcano"
-
-   * device/qcom/sepolicy_vndr/sm8750
-b5c02660d Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-75073394f Merge tag 'LA.VENDOR.15.4.0.r1-21200-pakala.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-   * hardware/qcom-caf/sm8350/audio
-9596e4b Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
-
-   * hardware/qcom-caf/sm8450-6.6/dataipa
-3296f05 Merge tag 'LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0
-
-   * hardware/qcom-caf/sm8450/audio/agm
-35c3491 Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-   * hardware/qcom-caf/sm8450/audio/pal
-a8c1206 Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-   * hardware/qcom-caf/sm8450/audio/primary-hal
-1e1e5aa Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-   * hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
-a17b3e2 Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-   * hardware/qcom-caf/sm8550/audio/primary-hal
-aa14955 Merge tag 'AUDIO.LA.8.0.r1-13000-KAILUA.0' into staging/lineage-23.2_merge-AUDIO.LA.8.0.r1-13000-KAILUA.0
-
-   * hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
-a37a455 Merge tag 'LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
-
-   * hardware/qcom-caf/sm8550/dataipa
-a964339 Merge tag 'LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
-
-   * hardware/qcom-caf/sm8650/audio/pal
-8c4463e Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' into staging/lineage-23.2_merge-AUDIO.LA.9.0.r1-08900-lanai.0
-
-   * hardware/qcom-caf/sm8650/audio/primary-hal
-2aa541f Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' into staging/lineage-23.2_merge-AUDIO.LA.9.0.r1-08900-lanai.0
-
-   * hardware/qcom-caf/sm8650/data-ipa-cfg-mgr
-0b5c342 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-
-   * hardware/qcom-caf/sm8650/dataipa
-1311e1c Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-
-   * hardware/qcom-caf/sm8750/audio/agm
-853c0f6 Merge tag 'AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0' into staging/lineage-23.2_merge-AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
-
-   * hardware/qcom-caf/sm8750/audio/pal
-39f7ccc Merge tag 'AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0' into staging/lineage-23.2_merge-AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
-
-   * hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
-5c75409 Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-
-   * hardware/qcom-caf/sm8750/dataipa
-c620683 Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-
-   * hardware/qcom-caf/thermal-legacy-um
-ed71072 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
+923ba75 Updater: Adapt colors in lottie animations
+8f5c35c Updater: Add device name in card
+9c79c9a Updater: Add device metadata info and links
+feb4bff Updater: Update header card for crdroid
+4801738 Updater: Adapt json parsing for crdroid
+aea8a4f Updater: Remove cryptographic signature verification for local updates
+758ca30 Updater: Initial adaption for crdroid
+75d2088 Ship as crDroid based on LOS
 
    * vendor/lineage
 66bb9134 crdroid: Add security date in OTA json
 543922f6 crdroid: Add sdk level in OTA json
-
-   * vendor/oneplus/sm8850-common
-17dc912 sm8850-common: Remove kernel post boot memory script
-
-   * vendor/qcom/opensource/audio-hal/st-hal
-943789d Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
-
-   * vendor/qcom/opensource/commonsys/fm
-bb6f204 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-
-   * vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
-897e656 Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
-
-   * vendor/qcom/opensource/interfaces
-eb976d9 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-
-====================
-     07-11-2026
-====================
-
-   * android
-49e254c manifest: Untrack sm8750 display hal
-
-   * device/oneplus/infiniti
-97900ad infiniti: Add previously decommonized DSP modules
-33f0be9 infiniti: Add previously decommonized audio_module_config_primary
-c6ca203 infiniti: Update from OOS 11.A.42
-c2615cf infiniti: Switch to prebuilt kernel
-97b6879 infiniti: Add display config for CN variant
-2fb7034 infiniti: Enable QTI recovery minui backend
-66da6c7 infiniti: Adjust screen density
-8df4697 infiniti: overlay: Add sw384dp status bar dimensions
-d54d618 infiniti: overlay: Adjust statusbar start padding
-046a41c infiniti: overlay: Update color modes from stock
-
-   * device/qcom/sepolicy_vndr/legacy-um
-73926f8b2 sepolicy_vndr: lahaina: Remove duplicate rule & labels
-4498c0e33 fixup! Remove vendor_service.
-bd6068a7f Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-   * device/qcom/sepolicy_vndr/sm8650
-7ed9a6287 Merge tag 'LA.VENDOR.14.3.0.r1-22900-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-   * frameworks/base
-bbad715725c7 SystemUI: Use proper Resolver background color
-ca4bb3ed8e13 Disable/reduce functionality of various ad/analytics libraries
-6efed8133190 SystemUI: Add customization for bold clock and period separator
-fbfeb729668d services: Add screen-on memory reclaim toggle
-38bbd78f39aa Merge pull request #1330 from swiitchOFF/16.0
-
-   * kernel/oneplus/sm8850
-8fa7fef01 Merge 18d366c4674c ("PCI: endpoint: Align pci_epc_set_msix(), pci_epc_ops::set_msix() nr_irqs encoding") into android16-6.12-lts
-
-   * lineage/hudson
-53bf63e Regenerate device dependency mappings
-
-   * lineage/mirror
-a9b5381 Updated to 10-Jul-2026 22:01 UTC
-
-   * packages/apps/crDroidSettings
-9b9cacccca4 crdroid: Add customization for bold clock and period separator
-7137fbc3d3a Merge pull request #1330 from cobrafast/feature/screen-on-reclaim-toggle
-
-   * vendor/qcom/opensource/commonsys/fm
-3848508 Merge tag 'LA.QSSI.16.0.r1-13200-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/fm-commonsys into HEAD
-
-====================
-     07-10-2026
-====================
-
-   * frameworks/base
-06cf65ce7c63 SystemUI: Fixing unsupported qs tile icon crash
-
-   * lineage/scripts
-594cd33 pixel: Also update system build fingerprint
-
-   * lineage/website
-cae5e9e www: Add amlogic burn mode to web flash-tools mention
-
-   * packages/modules/Permission
-b8fd980 Merge 'lineage-23.2' into 16.0
-
-   * packages/services/Telecomm
-71ec95f prefer bluetooth route for ringing
-
-====================
-     07-09-2026
-====================
-
-   * hardware/qcom-caf/sm8450/display
-b8d7737f5 Merge tag 'DISPLAY.LA.2.0.r1-13200-WAIPIO.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/display into lineage-23.2-caf-sm8450
-
-   * hardware/qcom-caf/sm8650/display
-1380ecb8b Merge tag 'DISPLAY.LA.4.0.r2-09500-lanai.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/display into lineage-23.2-caf-sm8650
-
-   * lineage/scripts
-c5075d1 pixel: Create directory before downloading
-
-====================
-     07-08-2026
-====================
-
-   * art
-6df2490 use ldp/stp for arm64 native call args
-d8d252d add jit pc range cache
-1e15c61 batch cmc sigbus prefetch
-708a939 always use speed profile for large apps
-61d2434 jit performance tuning
-77b071a jit: Use default jit hotness threshold for debug builds
-a47ebc3 gc: Disable dead objects poisoning on debug builds
-29d781f runtime: Disable kCheckDebugDisallowReadBarrierCount
-
-   * lineage/website
-178a956 www: Hotfix 2026-07-07
-997b214 www: Add July 2026 update post
-
-   * vendor/lineage
-83f11afb crdroid: Drop memtag props
-3f9e2208 crdroid: Bump to version 12.11
-6f50c1e9 overlay: Update DocumentsUIOverlay
-1a9281de config: speed compile applocker
-7988bdc6 config: dexpreopt gamespace
-11d84cee crdroid: Build AxSandbox
-1846b9fe config: Switch to glif_expressive SUW theme
-51b352db crdroid: Build AxQuickLook service
-6761f7ca config: Disable default frame rate limit for games
-b8e82d9a crdroid: Build AxThemeStore
-d4f41c5c overlay: Use google-sans-text for regular font
-ddfa3f97 crdroid: Fix material expressive for permission manager
-7b48e071 overlay: device_config: Update from google
-d9c11149 release: Enable clock_reactive_variants
-01857100 release: Import release flags from bp2a and mica bp3a
-e5cd3086 common: Allow OTA downgrade regardless build type
-b8a5fd81 overlay: Enable ambient AOD
-efcd637b overlay: Use google-sans for font config overlays
-02fd92bc crdroid: Enable background blur support by default
-2bec7ace build: Ship adb_root only WITH_SU
-eacc012e crdroid: Do not install matlog and updater in private space
-da779fa0 Move adb_root outside userbuild
-fe245255 crdroid: Adding an option to build DeviceAsWebcam
-a7e1c8e6 crdroid: Allow disabling MatLog
-122d6345 overlay: Add gms location history to extra location packages
-fd0786ed overlay: Add tethering to location exemption
-5056c4a1 overlay: Add SystemUI to location extra packages
-32e59191 overlay: Add OmniJaws to location extra packages
-620ebd51 crdroid: Conditionally build ColumbusService
-5d8b56ed overlay: Offload WM shell to another thread
-323d2b01 crdroid: Update clone exemption list
-fcf3b63d crdroid: Add preinstalled package list to stop auto cloning
-c36ebfc6 overlay: Enable app-cloning feature in Settings
-81fcb01a overlay: Settings: Show memory usage in app info
-9c216b33 device_config: Enable Cloned App
-330d1253 crdroid: Move face unlock biometric permission to system_ext
-cb74d87f crdroid: Switch to AOSPA's face unlock implementation
-ff003225 overlay: Remove bouncer delay when face unlock is enabled
-c525be16 crdroid: Build LMO Freeform app and sidebar
-006ff552 crdroid: Build GameSpace
-21c3a566 crdroid: Build BatteryStatsViewer
-e13100e7 crdroid: Build OmniJaws service
-59352055 crdroid: Build OmniStyle
-b9c915a9 crdroid: Execute changelog script once at a time
-b7f36545 crdroid: Add changelog script
-e18976c6 component-overrides: Force disable google settings intelligence injects
-f9f8fd88 component-overrides: Force various google components
-be69db51 build: Override host metadata
-36013768 kernel: Set "safe" default values for kernel build host & user
-0d9c5f4e overlay: Enable split shade for notifications in landscape
-10063585 rro_overlay: Use headline font for PermissionController
-3f43d8ba overlay: Update circle to search overlays for vanilla builds
-1be470c4 overlay: Enable circle to search
-86d5e921 crdroid: Clean up wallpaper overlay
-dbd01ab6 crdroid: Disable memtag for different processes
-72247d3c overlay: SystemUI: Add plugin whitelist
-4209317b overlay: Update SettingsProvider defaults
-f27dff35 overlay: Set AOSP webview as fallback
-b0bd5fc5 crdroid: Remove packages moved to addons
-54e8552f crdroid: Moved bootanimation to addons
-38c1ec46 overlay: Update clock plugin list
-47f4f99e overlay: Allow new SystemUI clocks
-78496d5c charger: Switch from LineageOS Teal to crDroid Blue
-61c274a8 Revert "overlay: Default to Seedvault backup transport"
-31a17de6 envsetup: Set crdroid path for Pixel OOT kernel build
-18f686c3 build: Enable ThinLTO cache
-8eb7f621 roomservice: Get me some crDroid
-a847ff86 crdroid: generate json at build time
-557de929 crdroid: Drop custom adb drawable
-62696566 build: Ship as crDroid based on LOS
-8e41931d release: Bump Security String to 2026-07-01
-
-====================
-     07-07-2026
-====================
-
-====================
-     07-06-2026
-====================
-
-   * bionic
-adc85bf bionic: drop long property-name warning spam
-
-   * build/soong
-0cabbb4 soong: Increase ThinLTO cache to 15GB
-d5008b1 soong: Make sure TLTO cache dir exists
-5255f02 lto: support overriding ThinLTO cache directory
-
-   * frameworks/base
-309246027e51 CarrierConfigManager: Gracefully handle missing CarrierConfigLoader
-f3ddccef34aa telephony: Relax default 5G NR SA SS-RSRP signal strength thresholds
-314ec0eb95e7 Revert "services: Skip access check for matlog shipped with rom"
-
-   * lineage/hudson
-b6fd1be freebox right after freedom day
-
-   * lineage/scripts
-acd1868 lineage-priv-template: Add com.android.npumanager
-
-   * system/core
-6a7ff2c init: Fixing abnormal state
-
-====================
-     07-05-2026
-====================
-
-   * android
-a7e64d6 Merge 'lineage-23.2' into 16.0
-5c3bbcb Revert "manifest: Track custom prebuilts/misc revision"
-
-   * build/soong
-97a6d74 soong: Overriding lineage namespace
-8eebd85 soong: Fix 'date' command options
-f936a1c soong: check_boot_jars: Whitelist Xiaomi Extensions
-0ace42c Add Kryo785 variant
-4b23287 Add exynos-m4 support
-af67f6b arm64_device: armv9-a: add additional march flags for all supported armv9-a platforms
-36699c4 Remove workaround for Qualcomm Kryo 385
-
-   * hardware/lineage/compat
-9e8811a compat: Provide our own libprotobuf 3.9.1 / 21.12 prebuilts
-
-   * hardware/qcom-caf/sm8450-6.6/audio/primary-hal
-6a42341 effects: Link against latest android.media.audio.common.types
-320014e effects: Include missing libaudioutils_headers dependency
-30010d1 effects: Fix sign comparison errors
-
-   * lineage/mirror
-2330004 Updated lineage-minimal to 04-Jul-2026 22:01 UTC
-b7b6083 Updated to 04-Jul-2026 10:01 UTC
-
-   * lineage/website
-065a2e2 feed: Fix typo
-ee2ff2c feed: Add rss/channel/item/content
-
-   * packages/apps/Launcher3
-1421bd8 Launcher3: Remove dead space in bottom appdrawer search bar
-0c2592c fixup! Launcher3: Add appdrawer searchbar location
-b992f70 Launcher3: Add blur for homescreen popup menu
-dc4fb65 Launcher3: Cancel ongoing animations before entering allapps
-639c9f1 Launcher3: Fix bottom sheet statusbar color
-49a1772 Launcher3: Force update statusbar color on allapps
-0895a13 Launcher3: Hide home screen in fullscreen appdrawer styles
-5c0d9e5 Launcher3: Enable blur on surfaces by default
-9421bb5 Launcher3: Set workspace blur outline after folder animation too
-7449933 Launcher3: Update DeepShortcutView in the case of using blur
-
-   * vendor/lineage
-6e3765ec config: Export TARGET_MAX_PAGE_SIZE_SUPPORTED to soong
-1db95992 config: Exclude prebuilts/misc/protobuf_vendorcompat
-938ec39b config: Remove deprecated flags
-
-   * vendor/oneplus/sm8850-common
-aecbb99 sm8850-common: Build libvmmem from source
-
-====================
-     07-04-2026
-====================
-
-   * android
-335a78f manifest: Track libvmmem
-
-   * device/qcom/sepolicy_vndr/sm8850
-cad392c Merge tag 'LA.VENDOR.16.2.0.r5-02000-kaanapali.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into lineage-23.2-caf-sm8850
-
-   * hardware/qcom-caf/sm8450-6.6/display/hal
-618af1105 Revert "vmmem: Make libvmmem_headers available"
-7f49d7699 Revert "vmmem: Add dummy libvmmem shared_lib"
-
-   * hardware/qcom-caf/sm8450/display
-9dfe54165 Revert "vmmem: Make libvmmem_headers available"
-b5b04cf1e Revert "vmmem: Add dummy libvmmem shared_lib"
-
-   * hardware/qcom-caf/sm8550/display
-d679d895c Revert "vmmem: Make libvmmem_headers available"
-7ea46e207 Revert "vmmem: Add dummy libvmmem shared_lib"
-
-   * hardware/qcom-caf/sm8650/display
-7f95c2416 Revert "vmmem: Make libvmmem_headers available"
-473c2b73e Revert "vmmem: Add dummy libvmmem shared_lib"
-
-   * lineage/website
-1b71a83 post: Android Developer Verification
-
-   * packages/apps/Twelve
-6a84b00 Twelve: Adjust track index card view colors
-3829c67 Twelve: Mark currently played track in album fragment
-
-   * packages/apps/crDroidSettings
-6792e62d962 crdroid: Add screen-on memory reclaim toggle
-
-   * packages/modules/Permission
-ee30155 Revert "permissions: check verity before using"
-
-   * vendor/qcom/opensource/libvmmem
-a4a0b08 libvmmem: Fix unused variable warning
-1e3b3e9 libvmmem: Fix format specifier errors
-fcf0021 Add .gitupstream file
 
