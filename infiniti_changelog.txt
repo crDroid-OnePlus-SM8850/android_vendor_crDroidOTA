@@ -1,384 +1,182 @@
 ====================
-     08-07-2026
+     08-26-2026
 ====================
 
    * build/make
-2b2ece0643 Expose TARGET_MAX_PAGE_SIZE_SUPPORTED via soong config vars
+85649c5ade Expose TARGET_MAX_PAGE_SIZE_SUPPORTED via soong config vars
+
+   * device/oneplus/infiniti
+3289177 infiniti: contribute support_slot_switching_2psim_1esim_config as ENABLED
 
    * device/oneplus/sm8850-common
-4f01eb6 sm8850-common: Add urcc-service and uah blobs to proprietary-files.txt
-d24769e enable RKPD (enables no-tinkering efisp exploit compatibility)
-22c707a sm8850-common: enable config_show_min_refresh_rate_switch
-beef81c Add kGestureDoubleTap
-0d3060c Add DT2W workaround
+eb279cc sm8850-common: Add urcc-service and uah blobs to proprietary-files.txt
+c02392e enable RKPD (enables no-tinkering efisp exploit compatibility)
+b1d929d sm8850-common: enable config_show_min_refresh_rate_switch
+2a6dcf4 Add kGestureDoubleTap
+11be6e6 Add DT2W workaround
 
    * frameworks/base
-bafa33034c3f PowerManagerService: re-apply DT2W mode on each screen-off
-c8db99a4b197 add workaround for punch-hole blinking
-7c6e342b718d New Crowdin updates (#1339)
+67fbde3157a5 PowerManagerService: re-apply DT2W mode on each screen-off
+a7bf9ef2103a add workaround for punch-hole blinking
 
    * hardware/oplus
-2fb3563 uah-client: Remove stub now that the real vendor blob is shipped
-75826d2 touch: support selectable Oplus polling rates
+25ff2dd eSimSwitcher: switch physical SIM slot via ISubsysRadio.setSimType
+4525702 sepolicy: qti: Grant system_server client access to the OPLUS eSIM HAL
+e01c502 uah-client: Remove stub now that the real vendor blob is shipped
+cee27f1 touch: support selectable Oplus polling rates
 
    * lineage-sdk
-015aeca sdk: allow selectable touch polling modes
+ad522f6 sdk: allow selectable touch polling modes
 
    * lineage/hudson
-3ccf41f Regenerate device dependency mappings
+87b0039 Why do OEMs ship different wifi/bt chipset revisions?
 
-   * packages/apps/GameSpace
-271ea90 New Crowdin updates (#157)
+   * lineage/mirror
+05ea509 Updated to 26-Aug-2026 06:01 UTC
 
-   * packages/apps/LMOFreeform
-8a195cf New Crowdin updates (#34)
-
-   * packages/apps/Launcher3
-e19eb92 New Crowdin updates (#553)
-4144355 New Crowdin updates (#551)
+   * lineage/wiki
+80b0b9f devices: nicepool: Use loaded module, not property to discern chipset
+1caa50f devices: Split nicepool into nicepool/nicepool_rtk
 
    * packages/apps/Settings
-6b9ad6911c5 use builder's OTA server
-70a73ce51f9 allows to disable donation reminders
+d3831ad8fcd use builder's OTA server
+dd8bf3b67d7 allows to disable donation reminders
 
    * packages/apps/Updater
-65c156c use builder's links
-d3115ee use builder's OTA server
+41e34c9 use builder's links
+1fb228f use builder's OTA server
 
    * packages/apps/crDroidSettings
-a966a5a8310 New Crowdin updates (#1334)
-
-   * packages/resources/apps
-5fd1ea8 New translations (#5)
+c4a36e1da4a increase notification interval
+131512a63d2 make donate reminder notification silent
+52ee442f80c allows to disable donation reminders
 
    * system/core
-ddfeb88 healthd: normalize for all known devices
-35fbbe4 healthd: normalize OPlus battery current units
-
-   * vendor/apn
-8322c36 APN: Declare type for T-Mobile Project Fi
-35a216e apn: RU: Update T-Mobile APN
-fb4e2d8 apn: Make "type" required
-8e71eb2 apn: Remove ATT Activation
+2530cc3 healthd: normalize for all known devices
+e12c5fc healthd: normalize OPlus battery current units
 
    * vendor/oneplus/fairlady
-5c9067c manifest: apply builder modified repos
+e6fd0b3 manifest: apply builder modified repos
 
    * vendor/oneplus/infiniti
-e1f1b2d manifest: apply builder modified repos
+5ef1237 manifest: apply builder modified repos
 
    * vendor/oneplus/macan
-4b86ce8 manifest: apply builder modified repos
+6e67184 manifest: apply builder modified repos
 
    * vendor/oneplus/macanc
-5a39dee manifest: apply builder modified repos
+2e9e125 manifest: apply builder modified repos
 
    * vendor/oneplus/sm8850-common
-a741f42 sm8850-common: Add vendor.oplus.hardware.urcc-service and UAH resource control blobs
-65d3639 manifest: apply builder modified repos
+c1859d8 sm8850-common: Add vendor.oplus.hardware.urcc-service and UAH resource control blobs
+71be7df manifest: apply builder modified repos
 
 ====================
-     08-06-2026
+     08-25-2026
 ====================
 
-   * hardware/qcom-caf/wlan
-80f4e56 Merge tag 'WLAN.LA.1.0.r1-09600-pakala.0' into staging/lineage-23.2_merge-WLAN.LA.1.0.r1-09600-pakala.0
+   * device/lineage/atv
+3b194c2 Drop forced scaling handling
 
    * kernel/oneplus/sm8850
-ef90d9cda Merge a4a77840cf6e ("arm64: debug: remove break/step handler registration infrastructure") into android16-6.12-lts
+07a76864c Merge 21739fa9712a ("usb: typec: tcpm: improve handling of DISCOVER_MODES failures") into android16-6.12-lts
 
    * lineage/hudson
-c38ded0 Regenerate device dependency mappings
-
-   * lineage/scripts
-f93bac0 motorola: Update info script to work with OTA zips
-
-   * lineage/wiki
-1a9d181 wiki: rtwo: Update Moto X40 variant to A15 firmware
-
-   * packages/services/Telephony
-c1ca3e6 Fix SimPhonebookProviderTest flakiness and leaks
-
-====================
-     08-05-2026
-====================
-
-   * lineage/mirror
-8e2bd43 Updated to 05-Aug-2026 06:01 UTC
+ca773f4 ohhhhhm ohmmmmmmmmmmmmmmm
+b10c864 Sort manaus correctly
+4994e7b hudson: Add Motorola edge 40 neo
 
    * lineage/wiki
-79580f6 wiki: peridot: Remove eSIM from peripherals
-
-====================
-     08-04-2026
-====================
-
-   * frameworks/base
-cbd4bf214cb0 Merge pull request #1340 from Perspective2077/16.0
-765b35759595 CachedAppOptimizer: don't crash system_server on kernels without memcg reclaim
-
-   * hardware/qcom-caf/sm8450/display
-222878b52 display: Make sure panel supports HDR before advertising
-
-   * hardware/qcom-caf/wlan
-0973b6a Revert "wifi-hal: Only try LOWI once"
-
-   * lineage/hudson
-41ac9a0 Regenerate device dependency mappings
-
-   * lineage/wiki
-2c624d2 wiki: Snapdragon -> Qualcomm
-
-   * vendor/lineage
-fb3c5498 crdroid: Add security date in OTA json
-096be98a crdroid: Add sdk level in OTA json
-c09b0d02 crdroid: Drop memtag props
-646c1754 crdroid: Bump to version 12.11
-96a709b3 overlay: Update DocumentsUIOverlay
-6417d647 config: speed compile applocker
-f1baee05 config: dexpreopt gamespace
-d1f26371 crdroid: Build AxSandbox
-a1886229 config: Switch to glif_expressive SUW theme
-93f73e08 crdroid: Build AxQuickLook service
-79112db7 config: Disable default frame rate limit for games
-c63ff297 crdroid: Build AxThemeStore
-1d5da504 overlay: Use google-sans-text for regular font
-bbb544f7 crdroid: Fix material expressive for permission manager
-2090a5ef overlay: device_config: Update from google
-0e277f24 release: Enable clock_reactive_variants
-408f8607 release: Import release flags from bp2a and mica bp3a
-12e7927b common: Allow OTA downgrade regardless build type
-91e5d672 overlay: Enable ambient AOD
-9f6bc2c1 overlay: Use google-sans for font config overlays
-c53bb504 crdroid: Enable background blur support by default
-ae4d25e5 build: Ship adb_root only WITH_SU
-e4fdec4b crdroid: Do not install matlog and updater in private space
-a36cc01c Move adb_root outside userbuild
-29afab2c crdroid: Adding an option to build DeviceAsWebcam
-fd1b3b1c crdroid: Allow disabling MatLog
-95b68c2a overlay: Add gms location history to extra location packages
-97d5d6d8 overlay: Add tethering to location exemption
-284d04a5 overlay: Add SystemUI to location extra packages
-0fa0ecb4 overlay: Add OmniJaws to location extra packages
-708cc927 crdroid: Conditionally build ColumbusService
-e6d38028 overlay: Offload WM shell to another thread
-68cf831a crdroid: Update clone exemption list
-eb7405df crdroid: Add preinstalled package list to stop auto cloning
-6ce88221 overlay: Enable app-cloning feature in Settings
-fc602cfd overlay: Settings: Show memory usage in app info
-a7dbc505 device_config: Enable Cloned App
-d8e394cf crdroid: Move face unlock biometric permission to system_ext
-6e3f4a36 crdroid: Switch to AOSPA's face unlock implementation
-26bd2751 overlay: Remove bouncer delay when face unlock is enabled
-651587fc crdroid: Build LMO Freeform app and sidebar
-64750f94 crdroid: Build GameSpace
-ebb26158 crdroid: Build BatteryStatsViewer
-e5764fb5 crdroid: Build OmniJaws service
-14c80b4d crdroid: Build OmniStyle
-78307d27 crdroid: Execute changelog script once at a time
-65b6c84d crdroid: Add changelog script
-00b55ddf component-overrides: Force disable google settings intelligence injects
-74aed7c3 component-overrides: Force various google components
-c85d5bab build: Override host metadata
-89d362e8 kernel: Set "safe" default values for kernel build host & user
-e4d409c2 overlay: Enable split shade for notifications in landscape
-038985be rro_overlay: Use headline font for PermissionController
-8d4e93b8 overlay: Update circle to search overlays for vanilla builds
-f9dda971 overlay: Enable circle to search
-5c8b86a6 crdroid: Clean up wallpaper overlay
-d8624657 crdroid: Disable memtag for different processes
-f40455ea overlay: SystemUI: Add plugin whitelist
-aed9612b overlay: Update SettingsProvider defaults
-0b1de00f overlay: Set AOSP webview as fallback
-f01e85b7 crdroid: Remove packages moved to addons
-067d65b3 crdroid: Moved bootanimation to addons
-8deb9ad1 overlay: Update clock plugin list
-c198c012 overlay: Allow new SystemUI clocks
-62407914 charger: Switch from LineageOS Teal to crDroid Blue
-07eed272 Revert "overlay: Default to Seedvault backup transport"
-ebe1021d envsetup: Set crdroid path for Pixel OOT kernel build
-8f6d0b1e build: Enable ThinLTO cache
-16232afa roomservice: Get me some crDroid
-17fe9d1c crdroid: generate json at build time
-ba1a449b crdroid: Drop custom adb drawable
-5bc9ccd9 build: Ship as crDroid based on LOS
-
-====================
-     08-03-2026
-====================
-
-   * frameworks/base
-cafe1efb0dc7 SystemUI: DynamicBar: Fix Compose Height making event passthrough instead of consuming all taps like before
-
-   * lineage/mirror
-0b35e92 Updated to 03-Aug-2026 06:01 UTC
-
-   * lineage/wiki
-9266871 wiki: peridot: Require 15 or 16 firmware
-23a2d4a wiki: signing_builds: Symlink testkey to releasekey
-
-   * packages/apps/TvSettings
-0e62bf2 TvSettings: Also show our About info on GTV
-
-   * packages/modules/Bluetooth
-01d58e9 Update Interop fix to be custom UUID based
-
-   * vendor/lineage
-b0fdd9a5 release: Bump Security String to 2026-08-01
-
-====================
-     08-02-2026
-====================
-
-   * bionic
-f07a440 fixing custom rom hide sysprop | crash issues
-
-   * frameworks/base
-648e67b6ec5c SystemUI: OnTheGo: Redesign dialog
-ffd0699bb159 SystemUI: OnTheGo: Run as camera FGS and fix preview size
-81613f6ad947 SystemUI: OnTheGo: Fix overlay swallowing all touch input
-
-   * hardware/qcom-caf/sm8450/audio/primary-hal
-9f4dec5 AHAL: AudioStream: change the exit read log level
-
-   * lineage/mirror
-973469f Updated to 02-Aug-2026 12:01 UTC
-
-   * system/sepolicy
-f2ea821 Merge pull request #15 from cevente/patch-1
-
-====================
-     08-01-2026
-====================
-
-   * bootable/recovery
-f3fe9b3 allowing spl downgrade by default
-02856ac recovery: Add support for AIDL bootcontrol HAL in slot switch option
-6212b14 recovery: Do not print switch slot info without actually switching a slot
-a21462c recovery: rewrite slot switch logic using bootcontrol APIs
-3b98989 recovery: add support for changing slots
-c3e6d4b recovery: Show crdroid display version in recovery
-4c09cdf install: Do not check ro.build.tags on user builds
-7a85429 install: Keep all spaces in "ui_print"
-8868555 recovery: Always consider builds to be debuggable
-dd932e2 recovery: Skip verifying packages altogether
-
-   * frameworks/base
-a6c5c9ef8103 Merge pull request #1338 from Loukious/fix/cachedappoptimizer-full-compaction
-46f099b55891 fixup! SystemUI: Add option to disable quicksettings on keyguard
-f6c18a9ecc7e CachedAppOptimizer: Fix FULL memcg compaction validation
-d2c86a27d7aa SystemUI: Fix doze sensor check for screen-off long press
-
-   * lineage/hudson
-8c9da04 Regenerate device dependency mappings
-89dc080 hudson: Ship Retroid Pocket Nova
-
-   * lineage/wiki
-9b0b300 wiki: contributors: Generate versions list instead of hoping it's right
-df8e3a6 wiki: contributors: Use get_displayname.md
-a9a009f wiki: Add Retroid Pocket Nova
-
-   * packages/apps/Aperture
-da03b6a Automatic translation import
-
-   * packages/apps/Glimpse
-160c5b6 Automatic translation import
-
-   * packages/apps/Profiles
-0abb3a1 Automatic translation import
+8b347b9 devices: Add DroidLogic NE S905X4 Devkits + ADT-4 (ohm) | 23.2
+11b12eb test: Remove unused schema and sort
+f6d610f wiki: Add Motorola edge 40 neo (manaus)
 
    * packages/apps/Twelve
-e2137e8 Twelve: Migrate away from ValueAnimator
-9364682 Automatic translation import
-
-   * packages/resources/devicesettings
-b6e16ab Automatic translation import
+cfeeefa Twelve: Update media3 to 1.10.0
 
 ====================
-     07-31-2026
+     08-24-2026
 ====================
-
-   * android
-a311bc9 Merge 'lineage-23.2' into 16.0
-
-   * external/chromium-webview/prebuilt/arm
-2f2702a Update Chromium Webview arm to 151.0.7922.71
-
-   * external/chromium-webview/prebuilt/arm64
-a04c6d4 Update Chromium Webview arm64 to 151.0.7922.71
-
-   * external/chromium-webview/prebuilt/x86
-f57ab0f Update Chromium Webview x86 to 151.0.7922.71
-
-   * external/chromium-webview/prebuilt/x86_64
-74bc304 Update Chromium Webview x86_64 to 151.0.7922.71
-
-   * frameworks/base
-1bd27e5d9695 ActivityThread: Prevent a NPE caused by null configuration
-41d566d0d23e SystemUI: Add missing check for lens button in screenshot actions
-37e8d3cad23f Merge pull request #1335 from CeRRiLLo89/raphael-compactsystem-fix
-5965a9fab56f Merge pull request #1334 from Loukious/fix/contextual-search-resource-ids
-304e240e7fab CachedAppOptimizer: skip unsupported system memcg compaction
-927254272173 aapt2: support explicit IDs for private symbols
 
    * lineage/mirror
-da6e79c Updated to 31-Jul-2026 18:01 UTC
+b4a39fc Updated to 24-Aug-2026 00:01 UTC
 
-   * system/sepolicy
-8b8a2c0 Merge pull request #14 from pbzin/agent/bootstat-health-hal-policy
-
-====================
-     07-30-2026
-====================
-
-   * android
-d38d2e1 snippets: Update kernel platform tags
-ffe1793 manifest: Add bazel kernel platform 5.15
-
-   * external/chromium-webview/patches
-0c68f2f Update Chromium Webview to 151.0.7922.71
-
-   * hardware/qcom-caf/sm8650/display
-fe6db19f6 composer: Skip device composition for cursor layer
-
-   * lineage/mirror
-f037a05 Updated to 30-Jul-2026 18:01 UTC
-
-   * lineage/scripts
-09e0c7b build-webview: Update default webview to 151.0.7922.71
-
-   * system/sepolicy
-4c1bd9f Fix permission for checkin data file in vold_prepare_subdirs
+   * tools/extract-utils
+19a1e68 sdat2img.py: Switch shebang line to python3
+cee027a extract_utils: Set use_generic_config for system_ext boot jars
 
 ====================
-     07-29-2026
+     08-23-2026
 ====================
-
-   * frameworks/base
-6d918f28d1e2 New Crowdin updates (#1332)
 
    * lineage/hudson
-3be10f0 The art wing gets a music room.
+96bc81e Regenerate device dependency mappings
 
-   * lineage/wiki
-2b33b4b wiki: devices: Promote haydn to 23.2
+====================
+     08-22-2026
+====================
+
+   * lineage/mirror
+266a504 Updated to 22-Aug-2026 00:02 UTC
 
    * packages/apps/Aperture
-3fb9b52 Aperture: Update ZXing-C++ to 3.1.1
-7b5991d Aperture: Update kotlin to 2.2.0
+88625a9 Aperture: Update CameraX to 1.7.0-alpha03
 
-   * packages/apps/GameSpace
-fd950be New Crowdin updates (#155)
+   * vendor/apn
+dd249f1 FR: Update APN for SFR
 
-   * packages/apps/LMOFreeform
-c4f1412 New Crowdin updates (#33)
+====================
+     08-21-2026
+====================
 
-   * packages/apps/Launcher3
-938aad2 New Crowdin updates (#550)
+   * lineage/hudson
+3c395be hudson: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
+543c1df Regenerate device dependency mappings
 
-   * packages/apps/crDroidSettings
-49d52fa1789 New Crowdin updates (#1332)
+   * lineage/wiki
+b2d80cf wiki: devices: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
 
-   * packages/resources/apps
-c1a548a New Crowdin updates (#4)
+====================
+     08-20-2026
+====================
+
+   * lineage/mirror
+e7bd58c Updated to 20-Aug-2026 00:02 UTC
+
+   * lineage/wiki
+7c1a3c9 wiki: device_build_before_init: Add erofs-utils to dependencies
+
+   * vendor/qcom/opensource/vibrator
+ff107c4 vibratorOL: Enforce min/max timeout for LDO vibrator motor
+
+====================
+     08-19-2026
+====================
+
+   * device/qcom/sepolicy_vndr/sm8450
+269c7aca0 sepolicy_vndr: Add label for 64-bit ssgqmigd
+
+   * lineage/mirror
+880a1dc Updated aosp-minimal to 19-Aug-2026 18:02 UTC
+3171ffe Updated to 19-Aug-2026 06:01 UTC
+
+   * packages/apps/Twelve
+c923103 Twelve: Fix ClassCastException in ProvidersManager::providerOf()
+
+====================
+     08-18-2026
+====================
+
+====================
+     08-17-2026
+====================
+
+   * lineage/crowdin
+c0d3769 config: Update ParanoidGlyph path
+
+   * lineage/hudson
+82331a0 Regenerate device dependency mappings
+
+   * packages/apps/Jelly
+7678330 Jelly: Desktop shortcuts
 
